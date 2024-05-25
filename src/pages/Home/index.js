@@ -1,17 +1,15 @@
 import { Link } from 'react-router-dom';
+import "./../../App.css";
 
 function Home(){
     return(
         <div>
-            <h1>Bem-vindo (a) à página HOME</h1>
-            <span>Henrique Santos</span>
-
-            <Link to="/sobre">Sobre</Link><br/>
-            <Link to="/contato">Contato</Link><br/>
+            <h1 className='container'>Bem-vindo (a) à página HOME</h1>
+            <span className='container'>Henrique Santos</span>
 
             <hr/>
             
-            <Link to ="/produto/1">Acessar Produto 1</Link>
+            <Link to ="/produto/1" className='container'>Acessar Produto 1</Link>
         </div>
     );
 }

@@ -1,17 +1,15 @@
 import { Link } from 'react-router-dom';
+import "./../../App.css";
 
 function Sobre(){
     return(
         <div>
-            <h1>Página Sobre a empresa</h1>
-            <span>PORTERITE</span>
-
-            <Link to="/home">Home</Link><br/>
-            <Link to="/contato">Contato</Link><br/>
+            <h1 className='container'>Página Sobre a empresa</h1>
+            <span className='container'>PORTERITE</span>
 
             <hr/>
             
-            <Link to ="/produto/1">Acessar Produto 1</Link>
+            <Link to ="/produto/1" className='container'>Acessar Produto 1</Link>
         </div>
     );
 }
